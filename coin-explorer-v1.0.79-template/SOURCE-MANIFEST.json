@@ -1,0 +1,20 @@
+{
+  "package": "VIVO Explorer v1.0.79 portable source template",
+  "created_utc": "2026-11-09T09:40:44.798476+00:00",
+  "source_release": "v1.0.79",
+  "production_files_modified": false,
+  "credentials_included": false,
+  "configuration_included": false,
+  "coin_independent": false,
+  "adaptation_required": "VIVO-specific RPC, quorum, address, branding, and Unix socket paths",
+  "files": {
+    "web/index.php": {
+      "sha256": "93b470a756e691e410c3dad23c7b3046f346b5345fe5bea76c7f431d8af299ba",
+      "size": 21620
+    },
+    "api/explorer-api.py": {
+      "sha256": "a7e1b157b7b9eae5856c09f7134c7898be3aa558c8ec4c818bb646a56d659947",
+      "size": 28667
+    }
+  }
+}

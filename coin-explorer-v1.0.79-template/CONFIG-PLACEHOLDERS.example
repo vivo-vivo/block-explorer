@@ -1,0 +1,13 @@
+# DOCUMENTATION PLACEHOLDERS ONLY. The current v1.0.79 source DOES NOT
+# automatically read these values. Adapt the Python/PHP source explicitly.
+COIN_NAME=YOUR_COIN
+COIN_TICKER=COIN
+COIN_CLI=/usr/local/bin/YOURCOIN-cli
+COIN_DATADIR=/var/lib/YOURCOIN
+RPC_HOST=127.0.0.1
+RPC_PORT=YOUR_RPC_PORT
+RPC_USER=YOUR_RPC_USERNAME
+RPC_PASSWORD=YOUR_RPC_PASSWORD
+EXPLORER_SOCKET=/run/coin-explorer/explorer.sock
+EXPLORER_DOMAIN=explorer.example.com
+WEB_ROOT=/var/www/coin-explorer/public

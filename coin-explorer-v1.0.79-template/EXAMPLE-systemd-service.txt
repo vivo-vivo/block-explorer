@@ -1,0 +1,22 @@
+# TEMPLATE / REFERENCE ONLY. Review the source's bind, socket permissions,
+# and daemon entry point before enabling. Do not put RPC passwords here.
+# Save as /etc/systemd/system/coin-explorer-api.service once adapted.
+[Unit]
+Description=Coin Explorer API
+After=network.target YOURCOIN.service
+
+[Service]
+Type=simple
+User=coin-explorer
+Group=www-data
+RuntimeDirectory=coin-explorer
+RuntimeDirectoryMode=0770
+WorkingDirectory=/opt/coin-explorer
+ExecStart=/usr/bin/python3 /opt/coin-explorer/explorer-api.py
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
